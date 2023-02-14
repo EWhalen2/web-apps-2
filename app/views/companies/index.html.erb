@@ -6,6 +6,10 @@
     <% for company in @companies %>
     <li>
       <%= company["name"] %>
+      <a href="/companies/<%= company["id"]%> company["name"] %>
     </li>
   <% end %>
 </ul>
+
+<p>
+<a href="/companies/new">Create a comapny</a>
