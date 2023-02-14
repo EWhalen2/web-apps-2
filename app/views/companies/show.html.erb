@@ -1,3 +1,13 @@
 <%# TODO: company details page %>
 <h1><%= @company["name"] %></h1>
 <h2><%= @company["city"]%></h2>
+
+<a href= "/companies">All companies</a>
+
+<h3>Contacts</h3>
+<% contacts = Contact.where({"company_id" => @company["id"]})%>
+<ul>
+    <%for ___ in ___ %>
+        <li>contact name</li>
+        <%end%>
+</ul>
